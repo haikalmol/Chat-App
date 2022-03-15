@@ -1,0 +1,17 @@
+@keyframes appear-from-left {
+  0% {transform: translateX(-100vw)}
+  100% {transform: translateX(0)}
+}
+
+@keyframes appear-from-right {
+  0% {transform: translateX(100vw)}
+  100% {transform: translateX(0)}
+}
+
+.appear-left {
+  animation: appear-from-left .75s ease-out;
+}
+
+.appear-right {
+  animation: appear-from-right .75s ease-out;
+}

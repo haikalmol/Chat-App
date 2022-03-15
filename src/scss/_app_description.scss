@@ -1,0 +1,41 @@
+.simple-booking {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  @media (max-width: $breakpt-small) {
+    flex-direction: column;
+  }
+
+  .text-content {
+    margin: 0 60px;
+    max-width: 440px;
+
+    @media (max-width: $breakpt-small) {
+      margin: 0 40px;
+    }
+
+    h1 {
+      color: $very-dark-desaturated-violet;
+      font-family: Rubik;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 40px;
+      margin-bottom: 35px;
+    }
+
+    p {
+      color: $dark-grayish-violet;
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+
+      @media (max-width: $breakpt-small) {
+        margin-bottom: 68px;
+        text-align: center;
+      }
+    }
+  }
+}

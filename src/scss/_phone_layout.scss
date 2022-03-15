@@ -1,0 +1,33 @@
+.phone {
+  background-color: $white;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px 15px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  margin: 0 60px;
+  padding: 10px;
+  width: 245px;
+
+  @media (max-width: $breakpt-small) {
+    margin: 62px auto 66px;
+  }
+
+  .header {
+    background: linear-gradient(90deg, $light-violet 0%, $light-magenta 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-height: 60px;
+
+    &::before {
+      background-color: $white;
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+      content: '';
+      display: block;
+      height: 17px;
+      margin: auto;
+      width: 130px;
+    }
+  }
+}

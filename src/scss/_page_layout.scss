@@ -1,0 +1,52 @@
+.chat-app-lp {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+
+  @media (max-width: $breakpt-small) {
+    height: auto;
+  }
+
+  .bg-decorator {
+    height: 87.5%;
+    position: absolute;
+    width: 500px;
+    z-index: -1;
+
+    @media (max-width: $breakpt-small) {
+      width: 100vw;
+      height: 500px;
+    }
+
+    &.left {
+      background: linear-gradient(20deg, $light-violet 0%, $light-violet 50%, $light-magenta 120%);
+      border-bottom-left-radius: 300px;
+      border-bottom-right-radius: 300px;
+      left: -80px;
+      top: 0;
+
+      @media (max-width: $breakpt-small) {
+        left: -50vw;
+        border-bottom-left-radius: 50vw;
+        border-bottom-right-radius: 50vw;
+      }
+    }
+
+    &.right {
+      background-color: $light-grayish-violet;
+      border-top-left-radius: 300px;
+      border-top-right-radius: 300px;
+      bottom: 0;
+      right: -80px;
+
+      @media (max-width: $breakpt-small) {
+        right: -50vw;
+        border-top-left-radius: 50vw;
+        border-top-right-radius: 50vw;
+      }
+    }
+  }
+}

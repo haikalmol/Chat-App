@@ -1,0 +1,82 @@
+.header-content {
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  font-family: Rubik;
+  font-weight: 500;
+  justify-content: space-between;
+  margin-top: 10px;
+  transition: opacity .25s;
+
+  .contact-info {
+    display: flex;
+
+    .back-btn {
+      background: none;
+      border: none;
+      padding: 0 7px 0 15px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        opacity: .7;
+        cursor: pointer;
+      }
+    }
+
+    .profile-pic {
+      border: 1px solid $white;
+      border-radius: 50%;
+      height: 24px;
+      object-fit: cover;
+      width: 24px;
+    }
+
+    .descr {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+      justify-content: center;
+
+      .name {
+        font-size: 9px;
+        margin-bottom: 5px;
+      }
+
+      .status {
+        color: $grayish-blue;
+        font-size: 7px;
+      }
+    }
+  }
+
+  .options-menu {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    transition: opacity .25s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
+    }
+
+    .dot {
+      background: $white;
+      border-radius: 50%;
+      display: block;
+      height: 3px;
+      margin-top: 1.5px;
+      width: 3px;
+    }
+  }
+}
